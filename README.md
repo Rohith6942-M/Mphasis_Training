@@ -16,5 +16,6 @@
 - HibernateMySQL
 - HibernateExp1
 - StudentHB
+- HibernateCollection
   
 ****************************************************************************************************
