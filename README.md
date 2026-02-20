@@ -14,5 +14,7 @@
 - ServletJAAS
 - servletMVC
 - HibernateMySQL
+- HibernateExp1
+- StudentHB
   
 ****************************************************************************************************
