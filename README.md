@@ -17,5 +17,8 @@
 - HibernateExp1
 - StudentHB
 - HibernateCollection
+- HibernateMapping
+- HibernateMappingExp1
+- HibernateMappingExp2
   
 ****************************************************************************************************
