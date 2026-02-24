@@ -20,5 +20,7 @@
 - HibernateMapping
 - HibernateMappingExp1
 - HibernateMappingExp2
-  
+- SpringCoreExp
+- SpringFrameworkExp1
+- AnnoConfig
 ****************************************************************************************************
