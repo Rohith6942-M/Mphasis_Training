@@ -1,5 +1,6 @@
 package com.test;
 
+import java.util.ArrayList;
 //import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -21,15 +22,21 @@ public class cstDemo {
 		obj1.setCity("tirumala");
 		obj1.setState("AP");
 		obj1.setCountry("IN");
+		List <Address> list = new ArrayList<>();
+		list.add(obj1);
+		Customer cst = ctx.getBean(Customer.class);
+		cst.setId(134);
+		cst.setName("rohit");
+		System.out.println(cst);
 		Address obj2 = ctx.getBean(AnnoConfig.getAddress1().getClass());
 		obj2.setCity("sabarimala");
 		obj2.setState("KL");
 		obj2.setCountry("IN");
 		
-		Customer cst = ctx.getBean(Customer.class);
+		cst = ctx.getBean(Customer.class);
 		cst.setId(221);
 		cst.setName("SKY");
-		List <Address> list = Arrays.asList(obj1, obj2);
+		list.add(obj2);
 		
 		cst.setAdr(list);
 		System.out.println(cst);
