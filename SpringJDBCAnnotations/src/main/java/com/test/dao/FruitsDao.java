@@ -7,11 +7,14 @@ import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import com.test.model.FruitMapper;
 import com.test.model.Fruits;
 
 @Component
+@Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.SERIALIZABLE)
 public class FruitsDao {
 	
 	private JdbcTemplate jdbcTemplate;
@@ -45,3 +48,4 @@ public class FruitsDao {
 		return jdbcTemplate.query(select_sql, new FruitMapper());
 	}
 }
+
