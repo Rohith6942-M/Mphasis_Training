@@ -27,4 +27,5 @@
 - CustomBeanLifeCycle
 - SpringAOPExp1
 - SpringJBDExp1
+- SpringJDBCAnnotation
 ****************************************************************************************************
