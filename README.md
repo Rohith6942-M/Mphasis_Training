@@ -25,4 +25,6 @@
 - AnnoConfig
 - SpringCoreExp2
 - CustomBeanLifeCycle
+- SpringAOPExp1
+- SpringJBDExp1
 ****************************************************************************************************
