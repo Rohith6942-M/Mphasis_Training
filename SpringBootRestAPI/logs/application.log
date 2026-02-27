@@ -1,0 +1,242 @@
+2026-02-27T12:34:37.436+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : Starting SpringBootRestApiApplication using Java 25.0.1 with PID 17188 (C:\Users\rohith.m1\Desktop\mla_java1102\SpringBootRestAPI\target\classes started by rohith.m1 in C:\Users\rohith.m1\Desktop\mla_java1102\SpringBootRestAPI)
+2026-02-27T12:34:37.440+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:34:37.489+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-27T12:34:37.490+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-27T12:34:38.257+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T12:34:38.329+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2026-02-27T12:34:38.788+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7799 (http)
+2026-02-27T12:34:38.801+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T12:34:38.802+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T12:34:38.866+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1375 ms
+2026-02-27T12:34:39.045+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T12:34:39.100+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T12:34:39.582+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T12:34:39.614+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T12:34:40.356+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f48cab8
+2026-02-27T12:34:40.359+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T12:34:40.539+05:30  WARN 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T12:34:40.558+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/rohith]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: rohith/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T12:34:41.365+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T12:34:41.387+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : drop table if exists book
+2026-02-27T12:34:41.422+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : drop table if exists book_seq
+2026-02-27T12:34:41.437+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table book (id integer not null, price integer not null, author varchar(150) not null, name varchar(150) not null, primary key (id)) engine=InnoDB
+2026-02-27T12:34:41.628+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table book_seq (next_val bigint) engine=InnoDB
+2026-02-27T12:34:41.690+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : insert into book_seq ( next_val ) values ( 1 )
+2026-02-27T12:34:41.720+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:34:41.803+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T12:34:41.998+05:30  WARN 17188 --- [SpringBootRestAPI] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T12:34:42.038+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T12:34:42.383+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/rohith'
+2026-02-27T12:34:42.452+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7799 (http) with context path '/'
+2026-02-27T12:34:42.459+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : Started SpringBootRestApiApplication in 5.423 seconds (process running for 6.485)
+2026-02-27T12:35:40.064+05:30  INFO 17188 --- [SpringBootRestAPI] [http-nio-7799-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T12:35:40.064+05:30  INFO 17188 --- [SpringBootRestAPI] [http-nio-7799-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T12:35:40.066+05:30  INFO 17188 --- [SpringBootRestAPI] [http-nio-7799-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-27T12:35:40.861+05:30  INFO 17188 --- [SpringBootRestAPI] [http-nio-7799-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 321 ms
+2026-02-27T12:36:20.439+05:30 DEBUG 17188 --- [SpringBootRestAPI] [http-nio-7799-exec-10] org.hibernate.SQL                        : select next_val as id_val from book_seq for update
+2026-02-27T12:36:20.455+05:30 DEBUG 17188 --- [SpringBootRestAPI] [http-nio-7799-exec-10] org.hibernate.SQL                        : update book_seq set next_val= ? where next_val=?
+2026-02-27T12:36:20.503+05:30 DEBUG 17188 --- [SpringBootRestAPI] [http-nio-7799-exec-10] org.hibernate.SQL                        : insert into book (author,name,price,id) values (?,?,?,?)
+2026-02-27T12:39:55.427+05:30  INFO 17188 --- [SpringBootRestAPI] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-02-27T12:39:55.657+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T12:39:55.727+05:30  INFO 17188 --- [SpringBootRestAPI] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T12:39:55.737+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:39:55.743+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T12:39:55.790+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T12:39:55.973+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : Starting SpringBootRestApiApplication using Java 25.0.1 with PID 17188 (C:\Users\rohith.m1\Desktop\mla_java1102\SpringBootRestAPI\target\classes started by rohith.m1 in C:\Users\rohith.m1\Desktop\mla_java1102\SpringBootRestAPI)
+2026-02-27T12:39:55.974+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:39:56.513+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T12:39:56.529+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2026-02-27T12:39:56.670+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7799 (http)
+2026-02-27T12:39:56.673+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T12:39:56.673+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T12:39:56.719+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 711 ms
+2026-02-27T12:39:56.784+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T12:39:56.837+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T12:39:56.840+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-02-27T12:39:56.866+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11ebecc5
+2026-02-27T12:39:56.867+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-02-27T12:39:56.869+05:30  WARN 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T12:39:56.871+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/rohith]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: rohith/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T12:39:56.942+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T12:39:56.943+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : drop table if exists book
+2026-02-27T12:39:57.019+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : drop table if exists book_seq
+2026-02-27T12:39:57.074+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table book (id integer not null, price integer not null, author varchar(150) not null, name varchar(150) not null, primary key (id)) engine=InnoDB
+2026-02-27T12:39:57.175+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table book_seq (next_val bigint) engine=InnoDB
+2026-02-27T12:39:57.225+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : insert into book_seq ( next_val ) values ( 1 )
+2026-02-27T12:39:57.237+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:39:57.345+05:30  WARN 17188 --- [SpringBootRestAPI] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T12:39:57.362+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T12:39:57.508+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/rohith'
+2026-02-27T12:39:57.538+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7799 (http) with context path '/'
+2026-02-27T12:39:57.544+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : Started SpringBootRestApiApplication in 1.63 seconds (process running for 321.579)
+2026-02-27T12:39:57.547+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-27T12:39:58.948+05:30  INFO 17188 --- [SpringBootRestAPI] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 13 class path changes (0 additions, 0 deletions, 13 modifications)
+2026-02-27T12:39:58.950+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T12:39:58.954+05:30  INFO 17188 --- [SpringBootRestAPI] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T12:39:58.956+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:39:58.957+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-02-27T12:39:58.961+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-02-27T12:39:59.048+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : Starting SpringBootRestApiApplication using Java 25.0.1 with PID 17188 (C:\Users\rohith.m1\Desktop\mla_java1102\SpringBootRestAPI\target\classes started by rohith.m1 in C:\Users\rohith.m1\Desktop\mla_java1102\SpringBootRestAPI)
+2026-02-27T12:39:59.049+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:39:59.231+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T12:39:59.245+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2026-02-27T12:39:59.332+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7799 (http)
+2026-02-27T12:39:59.334+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T12:39:59.334+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T12:39:59.372+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 321 ms
+2026-02-27T12:39:59.403+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T12:39:59.436+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T12:39:59.438+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-02-27T12:39:59.458+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f16f639
+2026-02-27T12:39:59.459+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-02-27T12:39:59.461+05:30  WARN 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T12:39:59.462+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/rohith]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: rohith/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T12:39:59.498+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T12:39:59.499+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : drop table if exists book
+2026-02-27T12:39:59.540+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : drop table if exists book_seq
+2026-02-27T12:39:59.576+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table book (id integer not null, price integer not null, author varchar(150) not null, name varchar(150) not null, primary key (id)) engine=InnoDB
+2026-02-27T12:39:59.631+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table book_seq (next_val bigint) engine=InnoDB
+2026-02-27T12:39:59.703+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : insert into book_seq ( next_val ) values ( 1 )
+2026-02-27T12:39:59.716+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:39:59.788+05:30  WARN 17188 --- [SpringBootRestAPI] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T12:39:59.798+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T12:39:59.876+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/rohith'
+2026-02-27T12:39:59.896+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7799 (http) with context path '/'
+2026-02-27T12:39:59.898+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : Started SpringBootRestApiApplication in 0.877 seconds (process running for 323.934)
+2026-02-27T12:39:59.900+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-27T12:43:56.505+05:30  INFO 17188 --- [SpringBootRestAPI] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-27T12:43:56.507+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-9] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T12:43:56.511+05:30  INFO 17188 --- [SpringBootRestAPI] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T12:43:56.514+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:43:56.515+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-02-27T12:43:56.519+05:30  INFO 17188 --- [SpringBootRestAPI] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-02-27T12:43:56.605+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : Starting SpringBootRestApiApplication using Java 25.0.1 with PID 17188 (C:\Users\rohith.m1\Desktop\mla_java1102\SpringBootRestAPI\target\classes started by rohith.m1 in C:\Users\rohith.m1\Desktop\mla_java1102\SpringBootRestAPI)
+2026-02-27T12:43:56.606+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:43:56.786+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T12:43:56.798+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2026-02-27T12:43:56.902+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7799 (http)
+2026-02-27T12:43:56.904+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T12:43:56.904+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T12:43:56.940+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 332 ms
+2026-02-27T12:43:56.980+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T12:43:57.015+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T12:43:57.017+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-02-27T12:43:57.040+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f6f3603
+2026-02-27T12:43:57.040+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-02-27T12:43:57.042+05:30  WARN 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T12:43:57.043+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/rohith]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: rohith/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T12:43:57.083+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T12:43:57.086+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : drop table if exists book
+2026-02-27T12:43:57.131+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : drop table if exists book_seq
+2026-02-27T12:43:57.162+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table book (id integer not null, price integer not null, author varchar(150) not null, name varchar(150) not null, primary key (id)) engine=InnoDB
+2026-02-27T12:43:57.217+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table book_seq (next_val bigint) engine=InnoDB
+2026-02-27T12:43:57.274+05:30 DEBUG 17188 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : insert into book_seq ( next_val ) values ( 1 )
+2026-02-27T12:43:57.285+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:43:57.365+05:30  WARN 17188 --- [SpringBootRestAPI] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T12:43:57.380+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T12:43:57.479+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/rohith'
+2026-02-27T12:43:57.507+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7799 (http) with context path '/'
+2026-02-27T12:43:57.510+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : Started SpringBootRestApiApplication in 0.935 seconds (process running for 561.552)
+2026-02-27T12:43:57.512+05:30  INFO 17188 --- [SpringBootRestAPI] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-27T12:44:03.456+05:30  INFO 17188 --- [SpringBootRestAPI] [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-02-27T12:44:03.457+05:30  INFO 17188 --- [SpringBootRestAPI] [RMI TCP Connection(14)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T12:44:03.460+05:30  INFO 17188 --- [SpringBootRestAPI] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T12:44:03.463+05:30  INFO 17188 --- [SpringBootRestAPI] [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:44:03.463+05:30  INFO 17188 --- [SpringBootRestAPI] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-02-27T12:44:03.467+05:30  INFO 17188 --- [SpringBootRestAPI] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-02-27T12:45:17.845+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : Starting SpringBootRestApiApplication using Java 25.0.1 with PID 14820 (C:\Users\rohith.m1\Desktop\mla_java1102\SpringBootRestAPI\target\classes started by rohith.m1 in C:\Users\rohith.m1\Desktop\mla_java1102\SpringBootRestAPI)
+2026-02-27T12:45:17.848+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:45:17.902+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-27T12:45:17.902+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-27T12:45:19.024+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T12:45:19.083+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2026-02-27T12:45:19.633+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7799 (http)
+2026-02-27T12:45:19.646+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T12:45:19.647+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T12:45:19.711+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1808 ms
+2026-02-27T12:45:19.956+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T12:45:20.016+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T12:45:20.480+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T12:45:20.520+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T12:45:20.880+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73d30d15
+2026-02-27T12:45:20.882+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T12:45:20.933+05:30  WARN 14820 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T12:45:20.952+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/rohith]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: rohith/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T12:45:21.746+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T12:45:21.768+05:30 DEBUG 14820 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : drop table if exists book
+2026-02-27T12:45:21.806+05:30 DEBUG 14820 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : drop table if exists book_seq
+2026-02-27T12:45:21.847+05:30 DEBUG 14820 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table book (id integer not null, price integer not null, author varchar(150) not null, name varchar(150) not null, primary key (id)) engine=InnoDB
+2026-02-27T12:45:21.904+05:30 DEBUG 14820 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table book_seq (next_val bigint) engine=InnoDB
+2026-02-27T12:45:22.019+05:30 DEBUG 14820 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : insert into book_seq ( next_val ) values ( 1 )
+2026-02-27T12:45:22.037+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:45:22.123+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T12:45:22.323+05:30  WARN 14820 --- [SpringBootRestAPI] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T12:45:22.365+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-27T12:45:22.999+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/rohith'
+2026-02-27T12:45:23.061+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-27T12:45:23.155+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7799 (http) with context path '/'
+2026-02-27T12:45:23.166+05:30  INFO 14820 --- [SpringBootRestAPI] [restartedMain] com.test.SpringBootRestApiApplication    : Started SpringBootRestApiApplication in 5.7 seconds (process running for 6.729)
+2026-02-27T12:45:23.731+05:30  INFO 14820 --- [SpringBootRestAPI] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T12:45:23.731+05:30  INFO 14820 --- [SpringBootRestAPI] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T12:45:23.733+05:30  INFO 14820 --- [SpringBootRestAPI] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-27T12:53:01.436+05:30  INFO 14820 --- [SpringBootRestAPI] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-02-27T12:53:01.439+05:30  INFO 14820 --- [SpringBootRestAPI] [RMI TCP Connection(13)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T12:53:01.443+05:30  INFO 14820 --- [SpringBootRestAPI] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T12:53:01.450+05:30  INFO 14820 --- [SpringBootRestAPI] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:53:01.453+05:30  INFO 14820 --- [SpringBootRestAPI] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T12:53:01.459+05:30  INFO 14820 --- [SpringBootRestAPI] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
