@@ -28,4 +28,10 @@
 - SpringAOPExp1
 - SpringJBDExp1
 - SpringJDBCAnnotation
+- SpringBoot
+- SpringBootForm
+- RestFulWebService
+- SpringBootRestful
+- SpringBootRestful-mysql
+- SpringBootRestful-h2sql
 ****************************************************************************************************
