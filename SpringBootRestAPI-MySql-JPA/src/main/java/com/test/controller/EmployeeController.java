@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.test.entity.Employee;
+import com.test.exception.EmployeeNotFoundException;
+import com.test.repository.EmployeeRepository;
 import com.test.service.EmployeeService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -30,6 +32,9 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService bookService;
 	
+	@Autowired
+	private EmployeeRepository repository;
+	
 	@PostMapping(value = "/create")
 	@Operation(summary = "CREATE EMPLOYEE LIST")
 	public ResponseEntity<Employee> createBook(@RequestBody Employee emp )
@@ -41,7 +46,7 @@ public class EmployeeController {
 		}
 		else
 		{
-			return new ResponseEntity<>(ep, HttpStatus.NO_CONTENT);
+			return new ResponseEntity<>(ep, HttpStatus.BAD_REQUEST);
 		}
 	}
 	
@@ -56,7 +61,7 @@ public class EmployeeController {
 		}
 		else
 		{
-			return new ResponseEntity<>(list, HttpStatus.NO_CONTENT);
+			return new ResponseEntity<>(list, HttpStatus.NOT_FOUND);
 		}
 	}
 	
@@ -71,7 +76,7 @@ public class EmployeeController {
 		}
 		else
 		{
-			return new ResponseEntity<>(bk, HttpStatus.NO_CONTENT);
+			return new ResponseEntity<>(bk, HttpStatus.NOT_FOUND);
 		}
 	}
 	
@@ -87,7 +92,8 @@ public class EmployeeController {
 		}
 		else
 		{
-			return new ResponseEntity<>(bk, HttpStatus.BAD_REQUEST);
+			//return new ResponseEntity<>(bk, HttpStatus.NOT_FOUND);
+			throw new EmployeeNotFoundException("NO_CONTENT_FOR_GIVEN_REQUEST");
 		}
 	}
 	
@@ -102,7 +108,52 @@ public class EmployeeController {
 		}
 		else
 		{
-			return new ResponseEntity<>(list, HttpStatus.NO_CONTENT);
+			return new ResponseEntity<>(list, HttpStatus.NOT_FOUND);
+		}
+	}
+	
+	@GetMapping("/byname/{name}")
+	@Operation(summary = "GET EMPLOYEE BY NAME")
+	public ResponseEntity<List<Employee>> getEmployeeByName(@PathVariable String name)
+	{
+		List<Employee> eobj = repository.getEmployeeByName(name);
+		if(eobj.size() > 0)
+		{
+			return new ResponseEntity<>(eobj, HttpStatus.OK);
+		}
+		else
+		{
+			return new ResponseEntity<>(eobj, HttpStatus.NOT_FOUND);
+		}
+	}
+	
+	@GetMapping("/bycompany/{company}")
+	@Operation(summary = "GET EMPLOYEE BY COMPANY")
+	public ResponseEntity<List<Employee>> getEmployeeByCompany(@PathVariable String company)
+	{
+		List<Employee> list = repository.getEmployeeByCompany(company);
+		if(list.size() > 0)
+		{
+			return new ResponseEntity<>(list, HttpStatus.OK);
+		}
+		else
+		{
+			return new ResponseEntity<>(list, HttpStatus.NOT_FOUND);
+		}
+	}
+	
+	@GetMapping("/emplist/asc")
+	@Operation(summary = "employees list sorted in ascending order")
+	public ResponseEntity<List<Employee>> getEmployeeASC()
+	{
+		List<Employee> list = repository.getAllEmployeeASC();
+		if(list.size() > 0)
+		{
+			return new ResponseEntity<>(list, HttpStatus.OK);
+		}
+		else
+		{
+			return new ResponseEntity<>(list, HttpStatus.BAD_REQUEST);
 		}
 	}
 }
