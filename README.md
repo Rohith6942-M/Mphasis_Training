@@ -34,4 +34,6 @@
 - SpringBootRestful
 - SpringBootRestful-mysql
 - SpringBootRestful-h2sql
+- springBoot-thymeleaf
+- springBoot-security
 ****************************************************************************************************
