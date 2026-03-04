@@ -36,4 +36,5 @@
 - SpringBootRestful-h2sql
 - springBoot-thymeleaf
 - springBoot-security
+- springboot-securityJPA
 ****************************************************************************************************
