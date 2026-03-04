@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: SBMicroserviceClient
+  web:
+    error:
+      whitelabel:
+        enabled: false
+eureka:
+  client:
+    service:
+      default: http://localhost:8761/eureka/
+
+server:
+  port: 2222			
+
