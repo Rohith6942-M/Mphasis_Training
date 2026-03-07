@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+    <title>Cart Manager</title>
+    <link rel="stylesheet" th:href="@{index.css}">
+<title>Create New Product</title>
+</head>
+<body>
+	<div align="center">
+	<div class="header"> Cart Manager</div><br>	
+		<h1>Create New Product</h1>
+		<br/>
+		<form action="#" th:action="@{/save}" th:object="${product}" method="post">
+			<table border="0" cellpadding="10">
+				<tr>
+					<td>Product Name:</td>
+					<td><input type="text" th:field="*{p_name}" /></td>
+				</tr>
+				<tr>
+					<td>Category:</td>
+					<td><input type="text" th:field="*{category}" /></td>
+				</tr>								
+				<tr>
+					<td>Price:</td>
+					<td><input type="text" th:field="*{price}" /></td>
+				</tr>
+			</table>				
+				<button type="submit">Save</button><br><br>
+		</form>
+		<a th:href="@{/index}">
+   		<button type="button">Back</button>
+		</a>	
+	</div>
+</body>
+</html>

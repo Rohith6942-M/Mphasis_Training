@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+    <title>Cart Manager</title>
+    <link rel="stylesheet" th:href="@{index.css}">
+<title>Cart Manager</title>
+</head>
+<body>
+<div class="container">
+<div class="header"> Cart Manager</div>	
+	<div>
+		<a href="new">
+		<button type="button">
+		Create New Product
+		</button></a>
+	</div><br><br>
+	<br/><br/>
+	<table border="1" cellpadding="10">
+		<thead>
+			<tr>
+				<th>Product ID</th>
+				<th>Name</th>
+				<th>category</th>
+				<th>Price</th>
+				
+				<th>Actions</th>				
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="product : ${listProducts}">
+				<td th:text="${product.id}">Product ID</td>
+				<td th:text="${product.p_name}">Name</td>
+				<td th:text="${product.category}">Brand</td>
+				<td th:text="${product.price}">Price</td>
+				
+				<td>
+					<a th:href="@{/edit/{id}(id=${product.id})}">
+					<button type="button">Edit
+					</button></a>
+					<a th:href="@{/delete/{id}(id=${product.id})}">
+					<button type="button">Delete
+					</button></a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="highlight-table">
+        <thead>
+            <tr>
+                <th>Lowest Price Product</th>
+                <th>Highest Price Product</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td th:if="${lowestProduct != null}">
+                    <p><strong>Name:</strong> <span th:text="${lowestProduct.p_name}"></span></p>
+                    <p><strong>Category:</strong> <span th:text="${lowestProduct.category}"></span></p>
+                    <p><strong>Price:</strong> <span th:text="${lowestProduct.price}"></span></p>
+                </td>
+                <td th:if="${highestProduct != null}">
+                    <p><strong>Name:</strong> <span th:text="${highestProduct.p_name}"></span></p>
+                    <p><strong>Category:</strong> <span th:text="${highestProduct.category}"></span></p>
+                    <p><strong>Price:</strong> <span th:text="${highestProduct.price}"></span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	<button type="button">
+	<div class="total">
+     Total Cost: <span th:text="${totalCost}"></span>
+	</div>
+	</button><br><br>
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="Logout" />
+	</form>
+</div>
+</body>
+</html>
